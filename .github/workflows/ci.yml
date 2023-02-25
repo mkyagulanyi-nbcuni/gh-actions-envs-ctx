@@ -9,8 +9,9 @@ jobs:
           pwd
           ls -ali
           git init
-          git remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
-          git remote set-url origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
+#          git remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+#          git remote set-url origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
+          git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
           git config --global user.email "michael.kyagulanyi@nbcuni.com"
           git config --global user.name "mkyagulanyi-nbcuni"
           git fetch
